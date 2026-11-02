@@ -41,12 +41,12 @@ proc freq data=sas.spine_binary;
     tables class_att*binary_target / missing;
 run;
 
+/* Note: Eliminated pelvic radius due to highly correlated */
 /* 5. Define predictors */
 %let feature_input =
     pelvic_incidence
     pelvic_tilt
     lumbar_lordosis
-    pelvic_radius
     spondylolisthesis_grade;
 
 %let target_input = binary_target;
