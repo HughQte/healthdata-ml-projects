@@ -1,8 +1,8 @@
 /* 1. Import dataset */
-libname sas "/home/u64368263/personal_projects/data";
+libname sas "../personal_projects/data";
 
 proc import
-    datafile="/home/u64368263/personal_projects/data/Dataset_spine.csv"
+    datafile="../data/Dataset_spine.csv"
     out=sas.spine
     dbms=csv
     replace;
